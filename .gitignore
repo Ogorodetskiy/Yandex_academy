@@ -4,8 +4,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-/.idea/
-
 # C extensions
 *.so
 
@@ -165,5 +163,3 @@ cython_debug/
 # created by virtualenv automatically
 /venv/
 /.ide/
-
->>>>>>> 11393f7 (answer to 2023-06-13)
