@@ -21,4 +21,5 @@ for i in data[1:]:
     else:
         a = res.pop()
         exec("res[-1] " + i + "= a")
+
 print(res[0])
