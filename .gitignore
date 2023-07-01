@@ -163,3 +163,4 @@ cython_debug/
 # created by virtualenv automatically
 /venv/
 /.ide/
+/TEST/
