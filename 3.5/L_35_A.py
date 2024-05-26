@@ -1,6 +1,8 @@
 from sys import stdin
-s = 0
-for x in stdin:
-    print(x.strip())
-    #s += int(x.strip())
-print(s, x)
+
+lines = []
+
+for line in stdin:
+    lines += map(int, line.rstrip('\n').split(' '))
+
+print(sum(lines))
