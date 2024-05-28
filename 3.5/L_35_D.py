@@ -1,6 +1,13 @@
 from sys import stdin
 
-lines = stdin.readlines()
+lines = []
 
-for txt in lines:
-    print(txt)
+for line in stdin:
+    lines.append(line.rstrip("\n"))
+
+dest = lines[-1].upper()
+
+for txt in lines[:-1]:
+
+    if txt.upper().find(dest) != -1:
+        print(txt)
