@@ -1,13 +1,11 @@
 from sys import stdin
 
-lines = []
 dest = set()
 
-for line in stdin:
-    lines.append(line.rstrip("\n"))
+lines = stdin.read().split()
 
-print(lines)
 for txt in lines:
-
     if txt.upper() == txt.upper()[::-1]:
-        print(txt)
+        dest.add(txt)
+
+print(*sorted(dest), sep='\n')
