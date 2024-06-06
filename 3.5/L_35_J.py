@@ -1,3 +1,7 @@
-string_with_tabs = "Python\tis\ta\tgreat\tlanguage."
-string_without_tabs = " ".join(string_with_tabs.split())
-print(string_without_tabs)
+some_file = input()
+n = int(input())
+
+with open(some_file, "r", encoding="UTF-8") as file_in:
+
+    for txt in list(file_in)[-n:]:
+        print(txt.strip())
